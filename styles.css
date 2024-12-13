@@ -1,0 +1,121 @@
+:root {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.active {
+    color: tomato;
+}
+
+body{
+    font-size: 2.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 50px;
+}
+
+nav{
+    font-size: 3rem;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin-right: 15px;
+  }
+  
+nav a:last-child {
+    margin-right: 0;
+}
+
+header {
+    padding: 40px 50px 0;
+}
+
+#about img {
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: black ;
+    padding-right: 20px;
+}
+
+a:hover {
+    color: tomato;
+}
+
+.name {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1.8px solid black;
+    width: 60%;
+}
+
+#price {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+th, td {
+    padding:  12px;
+    border: 1.8px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 50px;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 800px ) {
+    #about img {
+        width: 500px;
+    }
+    nav {
+      justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+    h1 {
+      text-align: center;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+      font-size: calc(3rem + 4px);
+    }
+    #about img {
+        width: 100%;
+    }
+    table {
+        font-size: calc(2.5rem / 1.5);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table{
+        font-size: calc(2.5rem / 1.85);
+    }
+}
